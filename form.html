@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<title>Login Form</title>
+</head>
+<body>
+<script>
+function msg() {
+
+         if( document.getElementById("name").value == "" )
+        	 alert( "Please Provide Your Username" );
+         	
+         else if( document.getElementById("pass").value == "" ) 
+         	alert( "Please Provide Password" );
+        	
+        }
+
+</script>
+	<div align="center">
+	<form name="loginForm" method="post" action="valserv">
+		Name: <input type="text" name="username" id="name"/> <br/>
+		Password: <input type="password" name="password" id="pass"/> <br/>
+		<input type="submit" value="Login" onclick="msg()"/>
+	</form>
+	</div>
+</body>
+</html>
